@@ -1,0 +1,24 @@
+.error {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-title {
+    font-size: 4rem;
+    font-family: var(--passion);
+    color: var(--dark-text);
+    line-height: 2.25rem;
+    letter-spacing: 1.5px;
+    color: var(--hover);
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    .error-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+}

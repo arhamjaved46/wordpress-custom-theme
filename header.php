@@ -28,6 +28,7 @@ $logoimg = get_header_image();
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/home/products.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/home/blog.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/home/404.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/home/contact.css">
     <?php wp_head(); ?>
 </head>
 

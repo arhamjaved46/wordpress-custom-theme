@@ -204,7 +204,7 @@
 }
 
 .blog-sidebar ul li {
-   list-style: none;
+    list-style: none;
 }
 
 .blog-sidebar-title {
@@ -304,7 +304,10 @@
 
     .container-single-blog {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 90%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .blog-sidebar ul li ul {
@@ -316,9 +319,11 @@
         align-items: center;
         gap: 2rem;
     }
+
     .blog-wrap {
         margin: 3rem 2rem;
     }
+
     .blog-sidebar-border {
         height: 1px;
         max-width: 100%;

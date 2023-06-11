@@ -1,0 +1,177 @@
+.contact {
+    margin: 3rem 2rem;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-heading {
+    margin-bottom: 3rem;
+}
+
+.contact-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    letter-spacing: 1.5px;
+    font-family: var(--passion);
+    text-transform: uppercase;
+    color: var(--dark-text);
+}
+
+.contact-title-border {
+    width: 100px;
+    height: 5px;
+    background-color: var(--dark-text);
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.contact-desc .contact-para {
+    background-color: var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+    color: var(--dark-text);
+    font-family: var(--inter);
+    line-height: 1.5rem;
+    padding: 2rem 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.contact-grid {
+    margin: 3rem 1rem;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-grid-1 {
+    grid-column: 1;
+}
+
+.contact-grid-1 label {
+    color: var(--dark-text);
+    font-family: var(--inter);
+    font-size: 1rem;
+}
+
+.contact-grid-1 input {
+    margin-top: 0.2rem;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid var(--light-text);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.contact-grid-1 label .contact-star {
+    color: var(--pink);
+}
+
+.contact-grid-2 {
+    grid-column: 2;
+}
+
+.contact-grid-2 label {
+    color: var(--dark-text);
+    font-family: var(--inter);
+    font-size: 1rem;
+}
+
+.contact-grid-2 input {
+    margin-top: 0.2rem;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid var(--light-text);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.contact-grid-2 label .contact-star {
+    color: var(--pink);
+}
+
+.contact-grid-3 {
+    grid-column: 1 / span 2;
+}
+
+.contact-grid-3 label {
+    color: var(--dark-text);
+    font-family: var(--inter);
+    font-size: 1rem;
+}
+
+.contact-grid-3 input {
+    margin-top: 0.2rem;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid var(--light-text);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.contact-grid-4 {
+    grid-column: 1 / span 2;
+}
+
+.contact-grid-4 label {
+    color: var(--dark-text);
+    font-family: var(--inter);
+    font-size: 1rem;
+}
+
+.contact-grid-4 textarea {
+    margin-top: 0.2rem;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid var(--light-text);
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--inter);
+}
+
+.contact-btn input[type="submit"] {
+    font-size: 1rem;
+    background-color: var(--pink);
+    color: var(--white);
+    line-height: 1rem;
+    font-family: var(--inter);
+    border: none;
+    border-radius: 6px;
+    padding: 1.25rem;
+}
+
+.contact-btn input[type="submit"]:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    .contact-title {
+        font-size: 1.875rem;
+        line-height: 1.25rem;
+    }
+
+    .contact-title-border {
+        height: 3px;
+        width: 50px;
+    }
+
+    .contact-grid-1 {
+        grid-column: 1 /span 2;
+    }
+
+    .contact-grid-2 {
+        grid-column: 1 /span 2;
+    }
+
+
+}

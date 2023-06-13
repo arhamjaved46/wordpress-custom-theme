@@ -7,25 +7,24 @@ $imagepath = wp_get_attachment_image_src(
 ?>
 
 <!--------- BANNER IMAGE ----------->
-<section class="single-project-banner-image blog-wrap">
-    <div class='container'>
-        <div class="container-single-blog">
-            <div>
-                <div class="single-project-title">
-                    <?php echo the_title(); ?> Project
-                </div>
-                <br>
-                <div class="">
-                    <img src="<?php echo $imagepath[0] ?>" class="single-project-thumbnail" alt="banner-image" />
-                </div>
-                <div class="single-project-desc">
-                    <?php echo get_the_content(); ?>
-                </div>
+
+<div class="blog-single-post-wrap">
+    <div class="blog-single-post-container">
+        <div class="single-post-title">
+            <?php echo the_title(); ?>
+        </div>
+        <div class="single-post-image">
+            <img src="<?php echo $imagepath[0] ?>" alt="Image-thumbnail" />
+        </div>
+        <div class="single-post-content">
+            <div class="single-post-desc">
+                <?php echo get_the_content(); ?>
+                <div class="blog-sidebar-border"></div>
             </div>
-            <div class='blog-sidebar'>
-                <div class='blog-sidebar-title'>Recent Posts</div>
-                <div class='blog-sidebar-border'></div>
-                <ul class='recent-posts'>
+            <div class="single-post-sidebar">
+                <div class="blog-sidebar-title">Popular Posts</div>
+                <div class="blog-sidebar-border"></div>
+                <ul class="recent-posts">
                     <?php
                     dynamic_sidebar('sidebar');
                     ?>
@@ -33,27 +32,24 @@ $imagepath = wp_get_attachment_image_src(
             </div>
         </div>
     </div>
-</section>
+</div>
+
 <!--------- END OF BANNER IMAGE ---------->
 
-
-
-<div class='newsletter'>
+<div class="newsletter">
     <section class="newsletter-wave" style="
-        background: rgb(236, 9, 140);
-        background: linear-gradient(
-          0deg,
-          rgba(236, 9, 140, 1) 0%,
-          rgba(130, 2, 99, 1) 33%,
-          rgba(135, 2, 101, 1) 55%,
-          rgba(236, 9, 140, 1) 100%
-        );
-      ">
+      background: rgb(236, 9, 140);
+      background: linear-gradient(
+        0deg,
+        rgba(236, 9, 140, 1) 0%,
+        rgba(130, 2, 99, 1) 33%,
+        rgba(135, 2, 101, 1) 55%,
+        rgba(236, 9, 140, 1) 100%
+      );
+    ">
         <div class="container newsletter-container">
             <div>
-                <div class="newsletter-heading">
-                    Subscribe to our newsletter
-                </div>
+                <div class="newsletter-heading">Subscribe to our newsletter</div>
                 <div class="newsletter-desc">
                     Be the first to get our latest products or blogs information
                 </div>
@@ -62,9 +58,7 @@ $imagepath = wp_get_attachment_image_src(
             <form action="#">
                 <div class="newsletter-content">
                     <input type="email" class="newsletter-box" placeholder="Enter your email address" />
-                    <button class="newsletter-btn">
-                        Subscribe
-                    </button>
+                    <button class="newsletter-btn">Subscribe</button>
                 </div>
             </form>
         </div>

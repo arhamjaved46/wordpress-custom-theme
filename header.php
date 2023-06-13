@@ -75,9 +75,9 @@ $logoimg = get_header_image();
     <nav class="navbar">
         <div class="desktop-menu" id="mobileMenu">
             <?php
-            wp_nav_menu(
-                array('theme-location' => 'primary-menu')
-            );
+            if (has_nav_menu('primary-menu')) {
+                wp_nav_menu(array('theme_location' => 'primary-menu'));
+            }
             ?>
         </div>
         <div class="mobile-menu">

@@ -7,27 +7,28 @@ $cat = get_categories(
 
 ?>
 
-<div class='blog'>
-    <div class="container container-blog">
-        <div class='blog-heading-detail'>
-            <div>
-                <div class="blog-title">The School Fundraising Blog</div>
-                <div class="blog-title-border"></div>
-            </div>
-            <div class='blog-heading-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+<div class="blog-wrap">
+    <div class="blog-container">
+        <div class="blog-title">
+            <h1>The School Fundraising Blog</h1>
+            <div class="blog-heading-border"></div>
         </div>
-        <div class='blog-categories'>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam
+        </p>
+
+        <div class="blog-categories">
             <?php
             foreach ($cat as $catvalue) {
                 ?>
-                <div class="blog-cat-1"><a href='<?php echo get_category_link($catvalue->term_id); ?>'>
-                    <?php echo $catvalue->name; ?>
-                </div></a>
+                <div class="blog-category"><a href='<?php echo get_category_link($catvalue->term_id); ?>'><?php echo $catvalue->name; ?></div></a>
             <?php } ?>
         </div>
 
-        <div class='blog-items'>
+        <div class="blog-posts-wrap">
 
             <?php
             while (have_posts()) {
@@ -38,32 +39,28 @@ $cat = get_categories(
                     'large'
                 );
                 ?>
-                <div class="single-blog-post">
-                    <div class="single-blog-post-img">
-                        <img src="<?php echo $imagepath[0]; ?>" class="single-blog-post-thumbnail" alt="blog-thumbnail" />
-                        <div class="single-blog-post-cat">
+
+                <div class="blog-post-card">
+                    <div class="blog-post-image">
+                        <img src="<?php echo $imagepath[0]; ?>" alt="Blog-post-image" />
+                        <div class="blog-post-category">
                             <?php echo the_category(); ?>
                         </div>
                     </div>
 
-                    <div class="single-blog-post-content">
-                        <div class="single-blog-post-date">
-                            <?php echo get_the_date(); ?>
-                        </div>
 
-                        <div class="single-blog-post-title">
-                            <?php the_title(); ?>
-                        </div>
-
-                        <div class="single-blog-post-desc">
-                            <?php echo get_the_content(); ?>
-                        </div>
-
-                        <div class="single-blog-post-readmore">
-                            <a href="<?php the_permalink(); ?>">Read more >></a>
-                        </div>
+                    <div class="blog-post-date">
+                        <?php echo get_the_date(); ?>
                     </div>
+                    <div class="blog-post-title">
+                        <?php the_title(); ?>
+                    </div>
+                    <div class="blog-post-desc">
+                        <?php echo the_excerpt(); ?>
+                    </div>
+                    <div class="blog-post-btn"><a href="<?php the_permalink(); ?>">Read more >></a></div>
                 </div>
+
             <?php } ?>
         </div>
     </div>

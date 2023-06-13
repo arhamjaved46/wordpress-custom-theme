@@ -135,6 +135,8 @@ Description: Showcasing fundraising projects, provide latest products informatio
 .menu li {
     list-style: none;
     padding: 1.2rem;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .menu li:hover {
@@ -227,7 +229,7 @@ Description: Showcasing fundraising projects, provide latest products informatio
 }
 
 .footer-item-svg {
-    width: 18px;
+    width: 16px;
     margin-right: 0.7rem;
 }
 
@@ -264,14 +266,62 @@ Description: Showcasing fundraising projects, provide latest products informatio
     grid-row: 1;
 }
 
+.grid-item-2 .nav-links li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.grid-item-2 .nav-links li a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--passion);
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
 .grid-item-3 {
     grid-column: 3;
     grid-row: 1;
 }
 
+.grid-item-3 .nav-links li {
+    list-style: none;
+    margin-top: 0.6rem;
+}
+
+.grid-item-3 .nav-links li a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--passion);
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
 .grid-item-4 {
     grid-column: 4;
     grid-row: 1;
+}
+
+.grid-item-4 .nav-links li {
+    list-style: none;
+    margin-top: 0.6rem;
+}
+
+.grid-item-4 .nav-links li a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--passion);
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
 }
 
 .footer-small {

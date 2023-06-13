@@ -274,8 +274,9 @@
 .single-project-desc {
     font-size: 1rem;
     font-family: var(--inter);
-    color: var(--light-text);
+    color: var(--dark-text);
     margin-top: 1rem;
+    line-height: 2rem;
 }
 
 .container-single {
